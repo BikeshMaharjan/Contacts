@@ -1,0 +1,91 @@
+<ScrollView
+    android:id="@+id/ScrollviewupdateId"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<LinearLayout
+     android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.bbk.contacts.AddcontactActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtFirstNameId"
+        android:hint="First Name..."
+        android:inputType="textPersonName"
+        android:background="@drawable/rectangleborder"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtLastNameId"
+        android:hint="Last Name..."
+        android:inputType="textPersonName"
+        android:background="@drawable/rectangleborder"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:id="@+id/edtMobileNoId"
+        android:hint="Mobile Number..."
+        android:background="@drawable/rectangleborder"
+        android:layout_margin="@dimen/activity_vertical_margin"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:inputType="phone"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtHomeNoId"
+        android:background="@drawable/rectangleborder"
+        android:hint="Home Number..."/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:inputType="phone"
+        android:id="@+id/edtOfficeNoId"
+        android:background="@drawable/rectangleborder"
+        android:hint="Office Number..."/>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/updatecontainerId">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:id="@+id/btnDoneId"
+            android:text="UPDATE"
+            android:gravity="left"
+            android:background="#A4C639"
+            android:padding="5dp"
+            android:textSize="20sp"
+            />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:id="@+id/btnCancelId"
+        android:text="CANCEL"
+        android:gravity="left"
+        android:background="#A4C639"
+        android:padding="5dp"
+        android:textSize="20sp"
+       android:layout_alignParentRight="true"
+
+        />
+    </RelativeLayout>
+</LinearLayout>
+</ScrollView>

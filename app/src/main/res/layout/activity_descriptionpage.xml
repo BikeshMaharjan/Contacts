@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/containerId">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgDisplayId"
+            android:src="@mipmap/ic_launcher"
+            android:layout_margin="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtPhoneTypeId"
+            android:layout_toRightOf="@id/imgDisplayId"
+            android:text="MOBILE"
+            android:textStyle="bold"
+            android:textColor="#A4C639"
+            android:layout_alignTop="@id/imgDisplayId"/>
+
+        <View
+            android:id="@+id/lineId"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/imgDisplayId"
+            android:layout_below="@id/txtPhoneTypeId"
+            android:background="#A4C639"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtNumberId"
+            android:layout_toRightOf="@id/imgDisplayId"
+            android:text="9843564948"
+            android:textSize="21sp"
+            android:layout_alignBottom="@id/imgDisplayId"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
